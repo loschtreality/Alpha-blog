@@ -1,20 +1,25 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 $navbar-default-bg: #535353;
-
+$faded-top-line: #eaeaea;
+$logo-color: white;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
 
 #logo {
-  color: #ffffff;
+  color: $logo-color;
   float: left;
   font-size: 1.7em;
 }
 
 #logo:hover {
-  color: #fff;
+  color: $logo-color;
   text-decoration: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: orange;
 }
 
 .center{
@@ -28,7 +33,7 @@ $navbar-default-bg: #535353;
 }
 
 .jumbotron h1 {
-  color: #fff;
+  color: $logo-color;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -37,9 +42,13 @@ $navbar-default-bg: #535353;
   font-size: 1.7em;
 }
 
+.article-meta-details{
+  border-top: 1px solid $faded-top-line;
+  margin-top: 15px;
+}
 
 .article-actions {
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid $faded-top-line;
   padding-top: 5px;
 }
 
@@ -54,7 +63,7 @@ $navbar-default-bg: #535353;
 }
 
 .article-body{
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid $faded-top-line;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -62,7 +71,7 @@ $navbar-default-bg: #535353;
 .footer {
   margin-top: 30px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid $faded-top-line;
   color: #777;
 }
 
